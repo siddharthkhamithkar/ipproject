@@ -15,15 +15,18 @@ while choice == 'wrong': #creates a while loop as the main part of the code, whi
     try:
         val = response
     except ValueError:
+        print
         print('This is not the number I was thinking about! Try again.')
         print
         print('--------------------------------------------------------------------')
         continue
     if val < ran:
+        print
         print('This is lower than the number I was thinking of. Please try again.')
         print
         print('--------------------------------------------------------------------') #prints this line when the value entered is wrong
     elif val > ran:
+        print
         print('This is larger than the number I was thinking of. Please try again.')
         print
         print('--------------------------------------------------------------------')#ditto
@@ -37,7 +40,7 @@ print('--------------------------------------------------------------------')
 time.sleep(2)
 print('In some time...')
 time.sleep(2)
-print('Why isn\'t it happening?')
+print('Why isn\'t it hasiddppening?')
 time.sleep(2)
 print('Wait, I need to grab a drink. I\'m tired.')
 time.sleep(1)
@@ -47,7 +50,7 @@ print('Loading…\n█▒▒▒▒▒▒▒▒▒')
 time.sleep(1)
 print('10%\n███▒▒▒▒▒▒▒')
 time.sleep(1)
-print('50%\n███████▒▒▒')
+print('80%\n███████▒▒▒')
 time.sleep(3)
 print('error: spilled drink on self.') #actually happens in real life with me
 print('Damn it, screw this. I\'m not thirsty anymore.')
@@ -58,5 +61,5 @@ webbrowser.open_new(r'project_info.pdf') #this is technically not a part of the 
 time.sleep(2)
 print('Now bye, hope this was good!')
 #project by:
-#Siddharth and Adhishri, 12D
+#Siddharth, Adhishri and Janhavi, 12D
 #Thank you!
