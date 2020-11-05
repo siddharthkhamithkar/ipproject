@@ -54,7 +54,8 @@ print('42% done.')
 time.sleep(1)
 print('76% done.')
 time.sleep(3)
-print('error: spilled drink on self.') #actually happens in real life with me
+print('error: spilled drink on self.') #actually happens in real life with me'
+time.sleep(1)
 print('Damn it, screw this. I\'m not thirsty anymore.')
 time.sleep(3)
 print('Okay, now let\'s try again.')
