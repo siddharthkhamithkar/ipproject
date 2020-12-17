@@ -64,5 +64,5 @@ webbrowser.open_new(r'project_info.pdf') #this is technically not a part of the 
 time.sleep(2)
 print('Now bye, hope this was good!')
 #project by:
-#Siddharth, Adhishri and Janhavi, 12D
+#Siddharth and Janhavi, 12D
 #Thank you!
