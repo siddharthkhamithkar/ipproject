@@ -1,5 +1,6 @@
 #!/usr/local/bin/python
 # coding: latin-1
+#note that you will need to have project_info in the same directory as the code for it to open on its own upon completion of execution
 #run the code before opening project_info.pdf
 #I suggest running the code through the terminal/CMD rather than any IDE
 #webbbrowser and random libraries are required in order to run this code
