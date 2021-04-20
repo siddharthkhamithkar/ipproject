@@ -9,11 +9,11 @@ import webbrowser
 import time
 import mysql.connector
 
-#score = mysql.connector.connect(user ='', password ='', host = 'localhost')
-#mycursor = score.cursor()
-#mycursor.execute('create database Score;')
-#mycursor.execute('use Score;')
-#mycursor.execute('create table Score (Name varchar(20), Attempts int);')
+score = mysql.connector.connect(user ='', password ='', host = 'localhost')
+mycursor = score.cursor()
+mycursor.execute('create database Score;')
+mycursor.execute('use Score;')
+mycursor.execute('create table Score (Name varchar(20), Attempts int);')
 
 ran = rd.randint(0,101) #generates random number. Replace rd.randint(0,101) with any intiger to make the evaluation simpler, or if you've got time to kill, play along
 ran_2 = rd.randint(0,5)
@@ -52,7 +52,7 @@ time.sleep(1)
 print('You took ', attempt, ' attempts!')
 time.sleep(1)
 name = raw_input('Oh yeah, I forgot to ask you for your name. What is it? ')
-#ycursor.execute('insert into table values(%s, %s);', (name, attempt))
+mycursor.execute('insert into table values(%s, %s);', (name, attempt))
 time.sleep(1)
 print('I will now open the documentation for this project!')
 print('--------------------------------------------------------------------')
