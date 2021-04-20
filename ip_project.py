@@ -9,13 +9,14 @@ import webbrowser
 import time
 import mysql.connector
 
-score = mysql.connector.connect(user='', password='')
-mycursor = score.cursor()
-mycursor.execute('create database Score;')
-mycursor.execute('create table Score (Name varchar(20), Attempts int);')
-mycursor.execute('use Score;')
+#score = mysql.connector.connect(user ='', password ='', host = 'localhost')
+#mycursor = score.cursor()
+#mycursor.execute('create database Score;')
+#mycursor.execute('use Score;')
+#mycursor.execute('create table Score (Name varchar(20), Attempts int);')
 
 ran = rd.randint(0,101) #generates random number. Replace rd.randint(0,101) with any intiger to make the evaluation simpler, or if you've got time to kill, play along
+ran_2 = rd.randint(0,5)
 choice = 'wrong'
 print('--------------------------------------------------------------------')
 attempt = 1
@@ -51,8 +52,7 @@ time.sleep(1)
 print('You took ', attempt, ' attempts!')
 time.sleep(1)
 name = raw_input('Oh yeah, I forgot to ask you for your name. What is it? ')
-sql = "INSERT INTO Score (Name, No. of attempts) VALUES (%s, %s)"
-val = (name, attempt)
+#ycursor.execute('insert into table values(%s, %s);', (name, attempt))
 time.sleep(1)
 print('I will now open the documentation for this project!')
 print('--------------------------------------------------------------------')
@@ -74,15 +74,20 @@ print('42% done.')
 time.sleep(1)
 print('76% done.')
 time.sleep(3)
-print('error: spilled drink on self.') #actually happens in real life with me'
-time.sleep(1)
-print('Damn it, screw this. I\'m not thirsty anymore.')
-time.sleep(3)
-print('Okay, now let\'s try again.')
-time.sleep(2)
-time.sleep(2)
-print('Now bye, hope this was good!')
-webbrowser.open_new('project_info.pdf') #this is technically not a part of the project, but I did it to automate it
+if ran_2 < 3 :
+    print('Error: spilled drink on self and ruined everything.')
+    time.sleep(1)
+    print('Damn it, screw this. I\'m not thirsty anymore.')
+    time.sleep(1)
+    print('I don\'t even want to play this game with you anymore.')
+    time.sleep(3)
+    print('Execute the code again.')
+else:
+    print('100% done.')
+    time.sleep(2)
+    print('Okay I have finished drinking, I\'ll open the project file now')
+    print('Now bye, hope this was good!')
+    webbrowser.open_new('project_info.pdf') #this is technically not a part of the project, but I did it to automate it
 
 #project by:
 #Siddharth and Janhavi, 12D
