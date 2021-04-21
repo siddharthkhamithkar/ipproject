@@ -9,7 +9,7 @@ import webbrowser
 import time
 import mysql.connector
 
-score = mysql.connector.connect(user ='', password ='', host = 'localhost')
+score = mysql.connector.connect(host = 'localhost', user = 'root', password = 'root')
 mycursor = score.cursor()
 mycursor.execute('create database Score;')
 mycursor.execute('use Score;')
